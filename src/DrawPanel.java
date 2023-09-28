@@ -45,11 +45,19 @@ public class DrawPanel extends JPanel implements ActionListener {
         //Вопросы:
         //1. Почему с высотой небольшие проблемы, нужно ещё 40 вычитать
 
-        this.cat = new Cat(PANEL_WIDTH - Cat.REFERENCE_WIDTH / 4, PANEL_HEIGHT - (Cat.REFERENCE_HEIGHT / 4) - 40,
-                Cat.REFERENCE_WIDTH / 4, Cat.REFERENCE_HEIGHT / 4);
+        //Вариант #1
+        this.cat = new Cat(PANEL_WIDTH - Cat.REFERENCE_WIDTH, PANEL_HEIGHT - (Cat.REFERENCE_HEIGHT) - 40,
+                Cat.REFERENCE_WIDTH, Cat.REFERENCE_HEIGHT);
         this.naruto = new Naruto(PANEL_WIDTH - Naruto.REFERENCE_WIDTH + cat.getWidth() + CHARACTER_INDENT,
                 PANEL_HEIGHT - Naruto.REFERENCE_HEIGHT - 40,
                 Naruto.REFERENCE_WIDTH, Naruto.REFERENCE_HEIGHT);
+
+        //Вариант#2
+//        this.cat = new Cat(PANEL_WIDTH - Cat.REFERENCE_WIDTH / 4, PANEL_HEIGHT - (Cat.REFERENCE_HEIGHT / 4) - 40,
+//                Cat.REFERENCE_WIDTH / 4, Cat.REFERENCE_HEIGHT / 4);
+//        this.naruto = new Naruto(PANEL_WIDTH - Naruto.REFERENCE_WIDTH + cat.getWidth() + CHARACTER_INDENT,
+//                PANEL_HEIGHT - Naruto.REFERENCE_HEIGHT - 40,
+//                Naruto.REFERENCE_WIDTH, Naruto.REFERENCE_HEIGHT);
     }
 
     @Override
