@@ -3,12 +3,12 @@ package Shapes;
 import java.awt.*;
 
 public class Cat extends Shape2D implements Movable {
+    public static final int REFERENCE_WIDTH = 512;
+    public static final int REFERENCE_HEIGHT = 320;
+
     private enum Position {
         RIGHT, LEFT;
     }
-
-    public static final int REFERENCE_WIDTH = 512;
-    public static final int REFERENCE_HEIGHT = 320;
 
     private static final Color BLACK_COLOR = new Color(19, 4, 0);
     private static final Color DARK_BROWN_COLOR = new Color(32, 27, 21);
